@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const questionRouter = require("./questionRouter");
 const tempquestionRouter = require("./tempQuesRouter");
-const TempQuizRouter = require("./TempQuizRouter");
-const MainQuizRouter = require("./MainQuizRouter");
+// const TempQuizRouter = require("./TempQuizRouter");
+// const MainQuizRouter = require("./MainQuizRouter");
 
 const answerrouter = require("./answerRouter");
 const tempanswerrouter = require("./tempAnsRouter");
@@ -21,8 +21,8 @@ router.use("/tempanswer", tempanswerrouter);
 router.use("/answer", answerrouter);
 router.use("/message", messagerouter);
 
-router.use("/tempQuiz", TempQuizRouter);
-router.use("/mainQuiz", MainQuizRouter);
+// router.use("/tempQuiz", TempQuizRouter);
+// router.use("/mainQuiz", MainQuizRouter);
 router.use("/sms", smsrouter);
 router.use("/coins", userCoinsrouter);
 
